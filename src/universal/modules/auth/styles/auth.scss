@@ -1,0 +1,40 @@
+@import "src/universal/styles/space.scss";
+@import 'node_modules/sass-material-colors/sass/sass-material-colors';
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $space-inset-default;
+}
+
+.formContainer {
+  margin: $space-stack-default;
+}
+
+.formButton {
+  width: 100%;
+}
+
+.asyncError {
+  max-width: 242px;
+  color: #fff;
+  background-color: material-color('red', '200');
+  border-radius: 2px;
+  padding: $space-inset-s;
+  text-align: center;
+}
+
+.form-banner {
+  text-align: center;
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+  line-height: 3rem;
+  background: material-color('green', '300');
+  color: material-color('grey', '50');
+}
+
+.help-text {
+  text-align: center;
+}

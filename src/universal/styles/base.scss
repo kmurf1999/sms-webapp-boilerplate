@@ -1,0 +1,34 @@
+@import 'node_modules/sass-material-colors/sass/sass-material-colors';
+
+@import "./reset.scss";
+@import "./space.scss";
+@import "./mixins.scss";
+@import "./typography.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+   width: 100%;
+   min-height: 100%;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+   font-family: $font-family-regular;
+   background: material-color('grey', '50');
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+/* Rules for sizing the icon. */
+.material-icons .md-18 { font-size: 18px !important; }
+.material-icons .md-24 { font-size: 24px !important; }
+.material-icons .md-36 { font-size: 36px !important; }
+.material-icons .md-48 { font-size: 48px !important; }
