@@ -88,7 +88,7 @@ export default {
      },
 
      {
-       test: /\.scss$/,
+       test: /\.(scss|css)$/,
        include: clientInclude,
        use: ExtractTextPlugin.extract({
          fallback: "style-loader",

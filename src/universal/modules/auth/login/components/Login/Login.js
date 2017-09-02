@@ -23,6 +23,7 @@ const validate = values => {
 const renderField = ({ input, label, type, meta: { touched, error } }) => (
   <TextField
     {...input}
+    style={{width: "100%"}}
     floatingLabelText={label}
     errorText={touched && error ? error : null}
     type={type}

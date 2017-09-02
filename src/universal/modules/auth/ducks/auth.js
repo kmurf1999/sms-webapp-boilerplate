@@ -61,7 +61,7 @@ export default createReducer(initialState, {
     },
     [SIGNUP_SUCCESS]: (state, payload) => {
       return Object.assign({}, state, {
-        isAuthenticated: false,
+        isAuthenticated: true,
         isAuthenticating: false,
         statusText: '',
         user: payload.user,

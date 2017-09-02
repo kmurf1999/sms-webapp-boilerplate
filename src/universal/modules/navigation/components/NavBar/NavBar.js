@@ -26,7 +26,7 @@ const NavBar = props => {
     <div>
       <h1 className="brand-name">Django React</h1>
       <IconButton iconStyle={props.menuOpen ? iconStyle.open : iconStyle.close} style={{position: "fixed"}} className="appBar" onTouchTap={() => props.actions.toggleMenu(!props.menuOpen)}>
-        <FontIcon color={props.menuOpen ? grey300 : grey100} className="material-icons hamburger">{props.menuOpen ? 'close' : 'menu'}</FontIcon>
+        <FontIcon color={props.menuOpen ? grey300 : grey100} className="material-icons">{props.menuOpen ? 'close' : 'menu'}</FontIcon>
       </IconButton>
     </div>
   );
